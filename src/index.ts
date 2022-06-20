@@ -2,13 +2,12 @@ import './css/style.css'
 import { home, homeTitle, homeComment, homeHours, homeLocation } from './home';
 
 
+// need a string to hold the current state
+let orientation = "home";
 
 function content() {
     let content = document.getElementById("content")
-    //const myIcon = new Image();
-    //myIcon.src = Icon;
 
-    //content?.appendChild(myIcon)
     return content
 }
 
@@ -34,6 +33,10 @@ function header() {
     list1.textContent = "Home"
     list2.textContent = "Menu"
     list3.textContent = "Contact"
+
+    list1.dataset.page = "home"
+    list2.dataset.page = "menu"
+    list3.dataset.page = "contact"
 
     //append the lists into ul
     ul.append(list1, list2,list3)
@@ -74,7 +77,7 @@ function footer() {
     return footer
 }
 
-
+// first we always see the home
 content()?.append(
     header(),// header is ALWAYS there
     contentContainer( // content is being erased and replaced here
@@ -88,5 +91,41 @@ content()?.append(
     footer()// footer always there
 )
 
-
+//onclick and switch case
+content()!.onclick = (ev: MouseEvent) => {
+    let target = ev.target as HTMLElement
+    console.log(target) 
     
+    if (target.dataset.page === orientation) return
+    else if (typeof(target.dataset.page ==="string")) {
+        if (target.dataset.page !== undefined) {
+            orientation = target.dataset.page
+
+            switch(orientation) {
+                case "home":
+                    content()?.replaceChildren(
+                        header(),
+                        contentContainer( // content is being erased and replaced here
+                        home( // the home container is containing all he other elements required to make this works
+                            homeTitle(),
+                            homeComment(),
+                            homeHours(),
+                            homeLocation()
+                            ),
+                        ),
+                    footer()// footer always there
+                    )
+                    
+                    break;
+                case "menu":
+                    console.log("Here should be the menu page")
+                    break
+                case "contact":
+                    console.log("Here should be contact")
+                    break;
+                default:
+                    console.log("Shouldn't happen")
+            }
+        }
+    }
+}
