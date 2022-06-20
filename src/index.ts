@@ -74,19 +74,23 @@ function homeComment(){
     commentContainer.classList.add("comment-container")
     
     let commentContentContainer = document.createElement("div")
+    commentContainer.append(commentContentContainer);
+    
     let commentTitle = document.createElement("h3")
     commentTitle.textContent = "It is a meat PARADISE"
-    let commentContent = document.createElement("p")
-    commentContainer.textContent = `
-    I wasn't sure what awaited me when I first entered this restaurant
-    `
-    commentContentContainer.append(commentTitle, commentContent)
-    commentContainer.append(commentContentContainer)
+    commentContentContainer.append(commentTitle)
+
+    let commentParagraph = document.createElement("p")
+    commentParagraph.classList.add("comment-paragraph")
+    commentParagraph.textContent = "MHHmmmmh. This shop is a T-Bone gem in an ocean of vegetables and seedoils"
+    commentContentContainer.append(commentParagraph)
     return commentContainer;
 }
 
 function homeHours(){
     let openingHourContainer = document.createElement("div")
+    openingHourContainer.classList.add("opening-hour-container")
+    
     let openingHourTitle = document.createElement("h3")
     openingHourTitle.textContent = "Hours"
     //opening hours
@@ -121,6 +125,7 @@ function homeHours(){
 
 function homeLocation() {
     let locationContainer = document.createElement("div")
+    locationContainer.classList.add("location-container")
     let locationTitle = document.createElement("h3")
     locationTitle.textContent = "Location"
     let locationAdress = document.createElement("p")
@@ -130,6 +135,24 @@ function homeLocation() {
     return locationContainer
 }
 
+
+function footer() {
+    let footer  = document.createElement("footer")
+
+    footer.innerHTML =`
+
+    <ul class="footer-left">
+        <li>sdfsdf<li>
+    </ul>
+    <ul class="footer-right">
+        <li>background image by: <a href="https://www.pexels.com/photo/bonfire-wallpaper-216634/">Icon0.com-Bonfire Wallpaper</a> </li>
+        <li>Steak picture by: <a href="https://www.pexels.com/photo/red-meat-with-chili-pepper-and-green-spies-65175/">Photo by mali maeder: </a></li>
+        <li>BBQ picture by <a href="https://www.pexels.com/photo/selective-focus-photography-of-meat-on-grill-2491273/">Photo by Desativado: </a></li>
+    </ul>
+    
+        `
+    return footer
+}
 /**
  * Content requires:
  * a header for the title
@@ -144,7 +167,6 @@ function home (homeTitle: HTMLDivElement,homeComment: HTMLDivElement,homeHours: 
     home.appendChild(homeComment)
     home.appendChild(homeHours)
     home.appendChild(homeLocation)
-    
     return home
 
     
@@ -159,6 +181,9 @@ content()?.append(
             homeHours(),
             homeLocation()
             ),
-        )
+        ),
+    footer()// footer always there
+    
+    
     )    
     
