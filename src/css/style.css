@@ -1,8 +1,133 @@
-h1 {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  background: url("../img/pexels-iconcom-216634.jpg");
+  background-size: contain;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(salmon, black);
+  opacity: 0.8;
+}
+header ul {
+  padding-top: 5px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+header li {
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 1px;
+  height: 30px;
+  width: 70px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+header li:active {
+  background-color: aliceblue;
   color: red;
 }
-h1:hover {
-  color: blue;
+
+footer {
+  display: flex;
+  background: black;
+  color: white;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:active {
+  color: cadetblue;
+}
+footer a:hover {
+  color: rgb(181, 152, 47);
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+  border-radius: 24px;
+  padding: 5px;
+  margin: 1rem 2rem;
+}
+
+.comment-container {
+  background-color: antiquewhite;
+  border-radius: 12px;
+  padding: 1rem 1rem;
+  margin: 1rem;
+}
+.comment-container h3 {
+  text-align: center;
+}
+.comment-container p {
+  word-wrap: break-all;
+  max-width: 25rem;
+}
+
+.opening-hour-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1rem;
+  border-radius: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.opening-hour-container h3 {
+  text-align: center;
+}
+.opening-hour-container p {
+  margin-left: 6rem;
+  margin-bottom: 4px;
+}
+
+.location-container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 0 1rem;
+}
+
+.content-container {
+  border-radius: 15px;
+  background-color: salmon;
+  padding-bottom: 1rem;
+  margin: 1rem 7rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-paragraph {
+  word-wrap: normal;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
