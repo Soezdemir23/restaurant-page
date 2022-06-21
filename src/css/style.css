@@ -38,6 +38,9 @@ header li:active {
   background-color: aliceblue;
   color: red;
 }
+header li:hover {
+  cursor: pointer;
+}
 
 footer {
   display: flex;
@@ -61,14 +64,14 @@ footer a:hover {
 .title-container {
   display: flex;
   justify-content: center;
-  background-color: antiquewhite;
+  background-color: brown;
   border-radius: 24px;
   padding: 5px;
   margin: 1rem 2rem;
 }
 
 .comment-container {
-  background-color: antiquewhite;
+  background-color: brown;
   border-radius: 12px;
   padding: 1rem 1rem;
   margin: 1rem;
@@ -82,7 +85,7 @@ footer a:hover {
 }
 
 .opening-hour-container {
-  background-color: black;
+  background-color: brown;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +103,7 @@ footer a:hover {
 }
 
 .location-container {
-  background-color: antiquewhite;
+  background-color: brown;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,6 +125,27 @@ footer a:hover {
 
 .comment-paragraph {
   word-wrap: normal;
+}
+
+.food-card {
+  background-color: brown;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 4rem;
+  display: flex;
+  gap: 4px;
+}
+.food-card .food-pic img {
+  max-width: 6rem;
+  object-fit: fill;
+}
+.food-card .food-desc {
+  display: flex;
+  flex-direction: column;
+}
+.food-card .food-desc p {
+  word-wrap: break-word;
+  max-width: 28rem;
 }
 
 section {
