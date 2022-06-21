@@ -29,3 +29,12 @@ enjoy
     + Create the menu to navigate through the sites
     + Add an eventlistener to replace the content with their corresponding JS/TS
 + Try to make it run on github pages, despite the index.html being created inside the dist folder.
+
+
+## Resources:
+
+Steak Photo by mali maeder: https://www.pexels.com/photo/red-meat-with-chili-pepper-and-green-spies-65175/
+Background photo by Icon0.com: https://www.pexels.com/photo/bonfire-wallpaper-216634/ 
+Fish Photo by Markus Spiske: https://www.pexels.com/photo/white-and-brown-textile-on-black-table-246120/
+Liver Photo by Rafał Nawrocki: https://www.pexels.com/photo/close-up-of-liver-bacon-and-onions-8878358/
+Fried Cuts Photo by Ahmed Bhutta: https://www.pexels.com/photo/fried-meat-on-a-wooden-board-7169619/
