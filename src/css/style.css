@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Geneva, Tahoma, sans-serif;
 }
 
 #content {
@@ -127,7 +128,7 @@ footer a:hover {
   word-wrap: normal;
 }
 
-.food-card {
+.card {
   background-color: brown;
   border-radius: 12px;
   padding: 1rem;
@@ -135,15 +136,15 @@ footer a:hover {
   display: flex;
   gap: 4px;
 }
-.food-card .food-pic img {
+.card .card-pic img {
   max-width: 6rem;
   object-fit: fill;
 }
-.food-card .food-desc {
+.card .card-desc {
   display: flex;
   flex-direction: column;
 }
-.food-card .food-desc p {
+.card .card-desc p {
   word-wrap: break-word;
   max-width: 28rem;
 }

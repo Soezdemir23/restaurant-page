@@ -1,9 +1,9 @@
-export function menu(menuTitle: HTMLDivElement, ...foodCard: HTMLDivElement[]){
+export function menu(menuTitle: HTMLDivElement, ...cards: HTMLDivElement[]){
     let menuContent = document.createElement("section");
     
     menuContent.appendChild(menuTitle)
-    for (let i = 0; i < foodCard.length; i++) {
-        menuContent.appendChild(foodCard[i])
+    for (let i = 0; i < cards.length; i++) {
+        menuContent.appendChild(cards[i])
         
     }
         
@@ -19,16 +19,16 @@ export function menuTitle() {
     return titleContainer;
 }
 
-export function foodCard(title: string, description: string, url: string = "") {
+export function card(title: string, description: string, url: string = "") {
     let foodCard = document.createElement("div")
-    foodCard.classList.add("food-card")
+    foodCard.classList.add("card")
 
     foodCard.innerHTML = 
     `
-    <div class="food-pic">
+    <div class="card-pic">
         <img src ="${url}" alt="${title}">
     </div>
-    <div class ="food-desc">
+    <div class ="card-desc">
         <h4>${title}</h4>
         <p>${description}</p>
     </div>

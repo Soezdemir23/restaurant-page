@@ -38,3 +38,7 @@ Background photo by Icon0.com: https://www.pexels.com/photo/bonfire-wallpaper-21
 Fish Photo by Markus Spiske: https://www.pexels.com/photo/white-and-brown-textile-on-black-table-246120/
 Liver Photo by Rafał Nawrocki: https://www.pexels.com/photo/close-up-of-liver-bacon-and-onions-8878358/
 Fried Cuts Photo by Ahmed Bhutta: https://www.pexels.com/photo/fried-meat-on-a-wooden-board-7169619/
+Serving staff Photo by Andrea Piacquadio: https://www.pexels.com/photo/hotel-servant-carrying-coffee-to-guest-3770107/
+BBQ Cook Photo by RODNAE Productions: https://www.pexels.com/photo/elderly-man-holding-meat-8523164/
+Head Server Photo by Kampus Production: https://www.pexels.com/photo/cheerful-ethnic-waiter-in-apron-standing-against-street-cafe-5920775/
+Customer Photo by Pixabay: https://www.pexels.com/photo/man-hat-usa-portrait-41008/
