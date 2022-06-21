@@ -1,6 +1,10 @@
 import './css/style.css'
 import { home, homeTitle, homeComment, homeHours, homeLocation } from './home';
-
+import {menu, menuTitle, foodCard} from './menu'
+import DeepFried from './img/pexels-ahmed-bhutta-7169619.jpg'
+import Steak from './img/pexels-mali-maeder-65175.jpg'
+import Fish from './img/pexels-markus-spiske-246120.jpg'
+import Liver from './img/pexels-rafał-nawrocki-8878358.jpg'
 
 // need a string to hold the current state
 let orientation = "home";
@@ -118,7 +122,19 @@ content()!.onclick = (ev: MouseEvent) => {
                     
                     break;
                 case "menu":
-                    console.log("Here should be the menu page")
+                    content()?.replaceChildren(
+                        header(),
+                        contentContainer( // content is being erased and replaced here
+                        menu(
+                            menuTitle(),
+                            foodCard("Steak", "The classic, the one and only. The king of the Texan soul next to a few inches shorter sawed double barrel shotguns",Steak),
+                            foodCard("Fish", "Not for everyone, daily changing condiments and spices to give this fat slapper a new spin everyday", Fish),
+                            foodCard("Liver", "Prepared with utmost care to make sure your body asks for more. Either with coleslaw, caramellized onions Also ask us for raw liver, diced for easy chewing and swallowing", Liver),
+                            foodCard("Deep-fried", "Mystery meat, mystery dish. Surely not made by food inspectors and unruly customers", DeepFried)
+                        )
+                        ),
+                    footer()// footer always there
+                    )
                     break
                 case "contact":
                     console.log("Here should be contact")
