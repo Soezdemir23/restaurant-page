@@ -14,9 +14,12 @@ configure webpack.config.js for
 ## How to run?
 
 npm ci
+
 npm run start
-??? 
+
 enjoy
+
+or click here for github pages: https://soezdemir23.github.io/restaurant-page/
 ## Assignments:
 + Start the project the same way with the webpack tutorial project, except:
     + Add SASS support
